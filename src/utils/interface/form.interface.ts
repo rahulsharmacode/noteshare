@@ -4,6 +4,19 @@ interface NoteForm {
     description : string,
 }
 
+interface LoginForm {
+    email : string,
+    password : string,
+}
+
+interface SignupForm {
+    email : string,
+    password : string,
+    confirm_password : string,
+}
+
 export type {
-    NoteForm
+    NoteForm,
+    LoginForm,
+    SignupForm
 }

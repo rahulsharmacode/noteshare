@@ -16,10 +16,12 @@
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.53.0",
     "react-layout-tool": "^1.0.4",
-    "react-quill": "^2.0.0"
+    "react-quill": "^2.0.0",
+    "react-router-dom": "^6.26.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
+    "@types/js-cookie": "^3.0.6",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
