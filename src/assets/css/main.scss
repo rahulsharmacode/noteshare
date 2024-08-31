@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.btn{
+    height: 40px;
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+.btn-outline {
+    font-size: 16px;
+    font-weight: 400;
+    border: 2px solid black;
+}
+
+.title-input{
+    height: fit-content;
+    height: 50px;
+    font-size: 28px;
+    font-weight: 600;
+    outline: none;
+}
+
+.title-input::placeholder,.title-lable{
+    font-size: 28px;
+    color: #c6c6c6;
+}
+.title-lable{
+    font-weight: 600;
+    padding-right: 10px;
+    border-right: 1px solid #c6c6c6;
+    width: 90px;
+}
+.aurthor-input{
+    height: fit-content;
+    font-size: 14px;
+    outline: none;
+}
+
+.aurthor-input::placeholder,.aurthor-lable,.description-lable{
+    color: #c6c6c6;
+    font-size: 14px;
+}
+.aurthor-lable{
+    padding-right: 10px;
+    border-right: 1px solid #c6c6c6;
+    width: 89px;
+}
+.description-lable{
+    padding-right: 10px;
+    border-right: 1px solid #c6c6c6;
+    width: 81px;
+}
+
+
+/* styles.css */
+.quill-wrapper.focused{
+    .ql-toolbar.ql-snow{
+        border: none !important;
+        display: block;
+    }
+   
+
+
+}
+.quill-no-border .ql-container {
+    border: none !important;
+    box-shadow: none; /* Remove box-shadow if any */
+
+  
+}
+.ql-toolbar.ql-snow{
+    border: none !important;
+    display: none;
+}
+.quill-no-border .ql-editor {
+    border: none !important;
+}
+
+.ql-editor.ql-blank::before {
+    color: #c6c6c6 !important;
+    font-style: normal !important;
+    left: 8px !important;
+    pointer-events: none;
+    position: absolute;
+    right: 15px;
+}
+
