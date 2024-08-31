@@ -20,12 +20,20 @@ const App:React.FC = () => {
   };
   const onSubmit: SubmitHandler<NoteForm> = (data) => console.log(data);
   return (<>
-  
+        <div className="container bg-cyan-600  px-10 py-3 flex justify-between aligns-center">
+          <div className="my-auto">
+            <span className="text-slate-200 text-sm my-auto">Note* without login, data access temporary</span>
+          </div>
+          <div className="btn-group">
+          <button className='btn btn-white rounded-[5px] p-1 px-3 me-2'>Login</button>
+          <button className='btn btn-white-outline rounded-[5px] text-white p-1 px-3'>SignUp</button>
+          </div>
+        </div>
       <div className="container w-[900px] mx-auto px-4 sm:px-6 lg:px-8  grid mt-10">
 
       <div className="">
-          {errors.title && <span className='text-red-500 capitalize text-sm'>{errorsMessage.title} *</span>}
-          {errors.aurthor && <span className='text-red-500 capitalize text-sm'>{errorsMessage.aurthor} *</span>}
+          {errors.title && <span className='text-red-500 capitalize text-sm me-2'>{errorsMessage.title} *</span>}
+          {errors.aurthor && <span className='text-red-500 capitalize text-sm me-2'>{errorsMessage.aurthor} *</span>}
           {errors.description && <span className='text-red-500 capitalize text-sm'>{errorsMessage.description} *</span>}
           </div>
         <form onSubmit={handleSubmit(onSubmit)}>

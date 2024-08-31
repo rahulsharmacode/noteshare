@@ -2,15 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 .btn {
-  height: 40px;
-  border-radius: 50px;
-  padding: 5px 20px;
+  font-size: 16px;
+  font-family: CustomSansSerif, "Lucida Grande", Arial, sans-serif;
+  font-weight: 600;
 }
 
 .btn-outline {
-  font-size: 16px;
-  font-weight: 400;
-  border: 2px solid black;
+  border-radius: 50px;
+  font-style: normal;
+  color: #000;
+  text-decoration: none;
+  border: 2px solid #333;
+  border-radius: 16px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  margin: 0 0 15px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.btn-white {
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn-white-outline {
+  border: 2px solid #fff;
 }
 
 .title-input {
