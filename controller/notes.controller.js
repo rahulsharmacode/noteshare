@@ -21,10 +21,7 @@ const noteGet = async (req, res) => {
 
 const notePost = async (req, res) => {
   const { title, description, aurthor, content_id } = req.body;
-  // Object.entries(req.body).map(([key, item]) => {
-  //   if (!item)
-  //     res.status(400).json({ message: `failed , ${key} is required*` });
-  // });
+
 
   try {
    
@@ -61,7 +58,6 @@ const notePut = async (req, res) => {
 
       const updatedData = {
         ...req.body,
-        slug: convertToSlug(req.body.title), 
         user_id : req["rootId"] || ""
       };
 
@@ -70,7 +66,7 @@ const notePut = async (req, res) => {
       { content_id });
       if (!findData) return res.status(404).json({ message: `failed , no record found.` });
       findData.title = updatedData.title;
-      findData.slug = updatedData.slug;
+   
       findData.aurthor = updatedData.aurthor;
       findData.description = updatedData.description;
       findData.user_id = updatedData.user_id;

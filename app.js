@@ -8,7 +8,7 @@ app.use(cors());
 app.use(userRouter);
 
 app.get('/' , (req,res) => {
-    res.status(200).json({message : "success" , data : "server test ok" , ip : req.ip , os : os.networkInterfaces()});
+    res.status(200).json({message : "success" , data : "server test ok" , ip : req.ip });
 });
 
 
